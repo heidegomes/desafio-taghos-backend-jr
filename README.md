@@ -50,8 +50,8 @@ Os livros possuem os seguintes atributos:
 Crie um arquivo `.env` na raiz do projeto com as seguintes variáveis:
 ```env
 MONGODB_URI=mongodb://db:27017
-PORT=8080
-ENV=development
+MONGODB_DB=books
+MONGODB_COLLECTION=books
 ```
 
 ## Instruções para Executar o Projeto
@@ -59,7 +59,7 @@ ENV=development
 ### Usando Docker
 1. **Construa e inicie os containers:**
    ```bash
-   docker-compose up --build
+   docker-compose up
    ```
 2. Acesse a aplicação em `http://localhost:8080`.
 

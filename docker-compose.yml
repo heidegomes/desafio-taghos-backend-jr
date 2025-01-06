@@ -2,29 +2,24 @@ version: "3.8"
 
 services:
   app:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: cosmtrek/air:v1.61.5
     container_name: golang_app
+    environment:
+      - MONGODB_URI=${MONGODB_URI:-mongodb://db:27017}
+      - MONGODB_DB=${MONGODB_DB:-books}
+      - MONGODB_COLLECTION=${MONGODB_COLLECTION:-books}    
     ports:
       - "8080:8080"
-    depends_on:
-      - db
-    environment:
-      - MONGODB_URI=${MONGODB_URI}
-      - MONGODB_DB=${MONGODB_DB}
-      - MONGODB_COLLECTION=${MONGODB_COLLECTION}
     volumes:
       - .:/app
-    restart: unless-stopped
+    working_dir: /app
+    depends_on:
+      - db
   db:
     image: mongo:6.0
     container_name: mongodb
     ports:
       - "27017:27017"
     volumes:
-      - mongo_data:/data/db
-    restart: unless-stopped
-    
-volumes:
-  mongo_data:
+      - ./mongo_data:/data/db
+
