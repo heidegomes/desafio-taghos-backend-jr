@@ -161,8 +161,12 @@ ENV=development
 
 - **Desenvolvimento Ágil:** A flexibilidade do MongoDB também facilita o desenvolvimento rápido e a adaptação a mudanças no modelo de dados, o que é vantajoso em projetos que precisam ser entregues rapidamente, como esse desafio.
 
-## Documentação Adicional
-Para mais informações sobre as decisões tomadas durante o desenvolvimento, consulte os comentários no código e a estrutura do projeto.
+## Informações Adicionais
+- **Escolha do MongoDB:** Optei pelo MongoDB devido à sua flexibilidade, já que o desafio não exigia relacionamentos complexos entre dados, e sua estrutura de documentos JSON permite um modelo de dados mais ágil e escalável.
+- **Estrutura do Projeto:** Defini a estrutura de diretórios de forma a organizar claramente as responsabilidades de cada parte da aplicação (configuração, controladores, modelos e rotas).
+- **Uso de Docker:** Containerizei a aplicação para garantir que ela funcionasse de forma consistente em diferentes ambientes, escolhendo uma imagem Docker leve (golang:alpine) para otimizar o desempenho.
+- **Variáveis de Ambiente:** Utilizei o godotenv para gerenciar variáveis de ambiente de maneira segura e prática, centralizando a configuração em um arquivo .env.
+- **Docker Compose:** Implementei o Docker Compose para simplificar a orquestração da aplicação e do banco de dados, facilitando o processo de execução do projeto em diferentes ambientes.
 
 ## Como Contribuir
 1. Faça um fork do repositório.
