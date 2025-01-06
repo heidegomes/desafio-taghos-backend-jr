@@ -44,7 +44,6 @@ func CreateBook(c *gin.Context) {
 	c.JSON(http.StatusCreated, book)
 }
 
-// Update a book
 func UpdateBook(c *gin.Context) {
 	id := c.Param("id")
 	objID, err := primitive.ObjectIDFromHex(id)
@@ -74,7 +73,6 @@ func UpdateBook(c *gin.Context) {
 	c.JSON(http.StatusOK, gin.H{"message": "Book updated successfully"})
 }
 
-// Get a book
 func FindBook(c *gin.Context) {
 	id := c.Param("id")
 	objID, err := primitive.ObjectIDFromHex(id)
@@ -93,7 +91,6 @@ func FindBook(c *gin.Context) {
 	c.JSON(http.StatusOK, book)
 }
 
-// Get all books
 func FindAllBooks(c *gin.Context) {
 	cursor, err := bookCollection.Find(context.TODO(), bson.M{})
 	if err != nil {
@@ -112,7 +109,6 @@ func FindAllBooks(c *gin.Context) {
 	c.JSON(http.StatusOK, books)
 }
 
-// Delete a book
 func DeleteBook(c *gin.Context) {
 	id := c.Param("id")
 	objID, err := primitive.ObjectIDFromHex(id)
