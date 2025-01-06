@@ -153,13 +153,13 @@ ENV=development
 - **Resposta de Sucesso:** `204 No Content`
 
 ## Justificativa do Banco de Dados
-Estrutura Flexível: Como o desafio não exige a implementação de relacionamentos complexos, o MongoDB, sendo um banco de dados NoSQL, oferece uma estrutura de dados flexível. Ele permite armazenar documentos JSON, o que é ideal para esse tipo de aplicação onde os dados (livros) podem ter diferentes atributos, como título, categoria, autor e sinopse, sem a necessidade de tabelas rígidas ou chaves estrangeiras.
+- **Estrutura Flexível:** Como o desafio não exige a implementação de relacionamentos complexos, o MongoDB, sendo um banco de dados NoSQL, oferece uma estrutura de dados flexível. Ele permite armazenar documentos JSON, o que é ideal para esse tipo de aplicação onde os dados (livros) podem ter diferentes atributos, como título, categoria, autor e sinopse, sem a necessidade de tabelas rígidas ou chaves estrangeiras.
 
-Escalabilidade: O MongoDB é conhecido por sua alta escalabilidade, permitindo que a aplicação cresça facilmente conforme a quantidade de livros ou usuários aumente. Isso é vantajoso em sistemas que podem precisar de performance em grandes volumes de dados.
+- **Escalabilidade:** O MongoDB é conhecido por sua alta escalabilidade, permitindo que a aplicação cresça facilmente conforme a quantidade de livros ou usuários aumente. Isso é vantajoso em sistemas que podem precisar de performance em grandes volumes de dados.
 
-Desempenho: Em casos onde não há a necessidade de realizar consultas com joins complexos, o MongoDB pode oferecer um desempenho melhor, já que ele não precisa fazer operações de junção entre tabelas, como no caso de bancos relacionais, o que pode reduzir a sobrecarga de processamento.
+- **Desempenho:** Em casos onde não há a necessidade de realizar consultas com joins complexos, o MongoDB pode oferecer um desempenho melhor, já que ele não precisa fazer operações de junção entre tabelas, como no caso de bancos relacionais, o que pode reduzir a sobrecarga de processamento.
 
-Desenvolvimento Ágil: A flexibilidade do MongoDB também facilita o desenvolvimento rápido e a adaptação a mudanças no modelo de dados, o que é vantajoso em projetos que precisam ser entregues rapidamente, como esse desafio.
+- **Desenvolvimento Ágil:** A flexibilidade do MongoDB também facilita o desenvolvimento rápido e a adaptação a mudanças no modelo de dados, o que é vantajoso em projetos que precisam ser entregues rapidamente, como esse desafio.
 
 ## Documentação Adicional
 Para mais informações sobre as decisões tomadas durante o desenvolvimento, consulte os comentários no código e a estrutura do projeto.
