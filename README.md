@@ -150,7 +150,7 @@ ENV=development
 #### 5. **Deletar Livro**
 - **URL:** `/books/{id}`
 - **Método:** `DELETE`
-- **Resposta de Sucesso:** `204 No Content`
+- **Resposta de Sucesso:** `200 Book deleted successfully`
 
 ## Justificativa do Banco de Dados
 - **Estrutura Flexível:** Como o desafio não exige a implementação de relacionamentos complexos, o MongoDB, sendo um banco de dados NoSQL, oferece uma estrutura de dados flexível. Ele permite armazenar documentos JSON, o que é ideal para esse tipo de aplicação onde os dados (livros) podem ter diferentes atributos, como título, categoria, autor e sinopse, sem a necessidade de tabelas rígidas ou chaves estrangeiras.
@@ -167,6 +167,7 @@ ENV=development
 - **Uso de Docker:** Containerizei a aplicação para garantir que ela funcionasse de forma consistente em diferentes ambientes, escolhendo uma imagem Docker leve (golang:alpine) para otimizar o desempenho.
 - **Variáveis de Ambiente:** Utilizei o godotenv para gerenciar variáveis de ambiente de maneira segura e prática, centralizando a configuração em um arquivo .env.
 - **Docker Compose:** Implementei o Docker Compose para simplificar a orquestração da aplicação e do banco de dados, facilitando o processo de execução do projeto em diferentes ambientes.
+- **Gin:** Optei pelo Gin-Gonic devido à sua simplicidade, desempenho e facilidade de uso para criar rotas e gerenciar requisições. A integração nativa com JSON e a capacidade de adicionar middlewares ajudaram a manter o código organizado e eficiente. Sua documentação robusta e a flexibilidade para validação e tratamento de erros tornaram o desenvolvimento mais ágil e direto.
 
 ## Como Contribuir
 1. Faça um fork do repositório.
