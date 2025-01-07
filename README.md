@@ -167,7 +167,7 @@ MONGODB_COLLECTION=books
 - **Uso de Docker:** Containerizei a aplicação para garantir que ela funcionasse de forma consistente em diferentes ambientes, escolhendo uma imagem Docker leve (golang:alpine) para otimizar o desempenho.
 - **Variáveis de Ambiente:** Utilizei o godotenv para gerenciar variáveis de ambiente de maneira segura e prática, centralizando a configuração em um arquivo .env.
 - **Docker Compose:** Implementei o Docker Compose para simplificar a orquestração da aplicação e do banco de dados, facilitando o processo de execução do projeto em diferentes ambientes.
-- **Gin:** Optei pelo Gin-Gonic devido à sua simplicidade, desempenho e facilidade de uso para criar rotas e gerenciar requisições. A integração nativa com JSON e a capacidade de adicionar middlewares ajudaram a manter o código organizado e eficiente. Sua documentação robusta e a flexibilidade para validação e tratamento de erros tornaram o desenvolvimento mais ágil e direto.
+- **Gin:** Optei pelo Gin-Gonic devido à sua simplicidade, desempenho e facilidade de uso para criar rotas e gerenciar requisições. 
 
 ## Como Contribuir
 1. Faça um fork do repositório.
