@@ -24,21 +24,21 @@ Os livros possuem os seguintes atributos:
 ## Estrutura do Projeto
 ```
 .
-├── config            # Configuração da aplicação e variáveis de ambiente
+├── config           
 │   └── config.go
-├── controllers       # Controladores para manipulação das rotas
+├── controllers       
 │   └── book.go
-├── database          # Conexão e configuração do banco de dados MongoDB
+├── database          
 │   └── mongodb.go
-├── models            # Modelos de dados
+├── models           
 │   └── book.go
-├── routes            # Definição das rotas da API
+├── routes            
 │   └── routes.go
-├── main.go           # Ponto de entrada da aplicação
+├── main.go          
 ├── docker-compose.yml
 ├── Dockerfile
-├── .env              # Arquivo de variáveis de ambiente (exemplo fornecido abaixo)
-└── go.mod            # Gerenciamento de dependências
+├── .env              
+└── go.mod            
 ```
 
 ## Pré-requisitos
